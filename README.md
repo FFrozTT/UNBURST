@@ -30,7 +30,13 @@ Fill in the ID Strings field with a single string containing the MAC, domain, an
   or
   - reg query HKLM\\SOFTWARE\\Microsoft\\Cryptography\\
 
+### Results
+If a GUID match was discovered, it will be highlighted in the top section. If there was no match, you will see the GUID listed but that's it.
 
-## Credit
+### Notes
+1. There isn't any indicator that it's *working* at the moment so when you click the button, just wait. I haven't got around to doing the whole async button thing yet.
+2. If you are doing manual GUID's, only do one ID at a time. If you are doing automatic, it will check all of the systems MAC addresses at once.
+
+### Credit
 1. Erik Hjelmvik - https://securityboulevard.com/2020/12/reassembling-victim-domain-fragments-from-sunburst-dns/
 2. Cado Security - https://github.com/cadosecurity/MalwareAnalysis/tree/3daecfaa9c8f3257a9da2ab13006b1ebb3a82329
