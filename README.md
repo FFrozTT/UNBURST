@@ -29,3 +29,8 @@ Fill in the ID Strings field with a single string containing MAC domain, and Mac
   - reg query \\\\\<remote ip\>\\HKLM\SOFTWARE\\Microsoft\\Cryptography\\
   or
   - reg query HKLM\\SOFTWARE\\Microsoft\\Cryptography\\
+
+
+## Credit
+1. Erik Hjelmvik - https://securityboulevard.com/2020/12/reassembling-victim-domain-fragments-from-sunburst-dns/
+2. Cado Security - https://github.com/cadosecurity/MalwareAnalysis/tree/3daecfaa9c8f3257a9da2ab13006b1ebb3a82329
