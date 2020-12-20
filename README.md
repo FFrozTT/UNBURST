@@ -36,6 +36,7 @@ If a GUID match was discovered, it will be highlighted in the top section. If th
 ### Notes
 1. There isn't any indicator that it's *working* at the moment so when you click the button, just wait. I haven't got around to doing the whole async button thing yet.
 2. If you are doing manual GUID's, only do one ID at a time. If you are doing automatic, it will check all of the systems MAC addresses at once.
+3. I haven't tested this against long domain names, I only have one domain name to validate this with.
 
 ### Credit
 1. Erik Hjelmvik - https://securityboulevard.com/2020/12/reassembling-victim-domain-fragments-from-sunburst-dns/
