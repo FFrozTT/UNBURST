@@ -1,0 +1,41 @@
+﻿<Window x:Class="UNBURST.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UNBURST"
+        mc:Ignorable="d"
+        Title="UNBURST" Height="984.526" Width="698.59" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Domain:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.633,0.554" Margin="84,561,0,0"/>
+        <TextBox x:Name="Textbox_Domain" HorizontalAlignment="Left" Height="23" Margin="147,561,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="413"/>
+        <TextBox x:Name="TextBox_IP" HorizontalAlignment="Left" Height="23" Margin="147,589,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="413" TextChanged="TextBox_IP_TextChanged"/>
+        <Label Content="Remote Host:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="61,586,0,0"/>
+
+        <TextBox x:Name="Textbox_GUID" HorizontalAlignment="Left" Height="125" Margin="147,792,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="413" AcceptsReturn="True"/>
+        <Button x:Name="Button_Remote" Content="Get value from remote machine" HorizontalAlignment="Left" Margin="147,617,0,0" VerticalAlignment="Top" Width="413" RenderTransformOrigin="-1.402,-0.496" Height="51" Click="Button_Remote_Click" IsEnabled="False"/>
+        <Label Content="GUIDs:" HorizontalAlignment="Left" Margin="101,789,0,0" VerticalAlignment="Top"/>
+        <Label Content="SUNBURST FQDNs:" HorizontalAlignment="Left" Margin="28,76,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Textbox_SBID" HorizontalAlignment="Left" Height="114" Margin="147,673,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="413" AcceptsReturn="True"/>
+        <Label Content="ID Strings:" HorizontalAlignment="Left" Margin="84,670,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonCalcGUIDs" Content="Calculate GUID's" HorizontalAlignment="Left" Margin="147,429,0,0" VerticalAlignment="Top" Width="411" Click="ButtonCalcGUIDs_Click" Height="60" IsEnabled="False"/>
+        <Rectangle Fill="#FF797991" Height="60" Margin="0,0,0,0" VerticalAlignment="Top"/>
+        <Label Content="Step 1" Margin="28,0,10,0" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
+        <Rectangle Fill="#FF797991" Height="60" Margin="0,494,0,0" VerticalAlignment="Top"/>
+        <Label Content="Step 2" Margin="28,494,10,0" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
+        <RichTextBox x:Name="RichTextboxFQDNs" HorizontalAlignment="Left" Height="344" Margin="147,80,0,0" VerticalAlignment="Top" Width="411" AcceptsReturn="True" TextChanged="RichTextboxFQDNs_TextChanged" VerticalScrollBarVisibility="Auto">
+            <RichTextBox.Resources>
+                <Style TargetType="{x:Type Paragraph}">
+                    <Setter Property="Margin" Value="0" />
+                </Style>
+            </RichTextBox.Resources>
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="ButtonManualGUID" Content="Manually Calc GUID" HorizontalAlignment="Left" Margin="565,676,0,0" VerticalAlignment="Top" Width="116" Click="ButtonManualGUID_Click"/>
+
+    </Grid>
+</Window>
