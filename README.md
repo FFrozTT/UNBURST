@@ -27,7 +27,7 @@ Fill in the ID Strings field with a single string containing the MAC, domain, an
 2. Domain name in all lower case e.g. domain.com
 3. MachineGuid from registry
   - reg query \\\\\<remote ip\>\\HKLM\SOFTWARE\\Microsoft\\Cryptography\\
-  or
+  <br>or
   - reg query HKLM\\SOFTWARE\\Microsoft\\Cryptography\\
 
 ### Results
