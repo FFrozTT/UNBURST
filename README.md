@@ -1,7 +1,7 @@
 # UNBURST
 
 A SUNBURST Forensic tool that tells you if your own hosts match any of the supplied SUNBURST FQDN's.
-In order to gather info from remote systems you will likely need to run as an administrator, with some domain privileges (like remote registry and wmic access).  You won't need full domain admin.
+In order to gather info from remote systems (e.g. your Orion pollers) you will likely need to run as an administrator, with some domain privileges (like remote registry and wmic access).  You won't need full domain admin.
 <br>If you only want to use the tool to manully calculate GUID then you don't need to run as admin. I included all the source code here so you can see it is safe to run.
 
 ### Automated checking (Needs admin to connect to machines remotely)
