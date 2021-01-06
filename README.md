@@ -9,7 +9,7 @@ Step 1
 Add all SUNBURST FQDN's to check against (e.g. [https://github.com/bambenek/research/blob/main/sunburst/uniq-hostnames.txt](https://github.com/bambenek/research/blob/main/sunburst/uniq-hostnames.txt))
 
 Step 2
-Fill in the remote host name and click "Get value from remote machine" button. 
+Fill in the remote host name and click "Get value from remote machine" button. E.g. myorionpoller.mydomain.com or an IP address.
 
 ### Manual checking (Does not require admin)
 Step 1
